@@ -514,22 +514,32 @@
        
         <form class="order-service">
            <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
-          <div class="form-field">
+           <ul>
+          <li class="form-field">
             <label for="name">Ім'я</label>
-            <input type="text" name="name" id="name" autofocus/>
-          </div>
+            <input class="form-input" type="text" name="name" id="name"/>
+            <svg class="form-icon" width="18px" height="18px">
+              <use href="./images/sprite.svg#person-icon"></use>
+            </svg>
+          </li>
 
-          <div class="form-field">
+          <li class="form-field">
             <label for="tel">Телефон</label>
-            <input type="tel" name="tel" id="tel" />
-          </div>
+            <input type="tel" name="tel" id="tel" class="form-input"/>
+            <svg class="form-icon" width="18px" height="18px">
+              <use href="./images/sprite.svg#phone-icon"></use>
+            </svg>
+          </li>
 
-          <div class="form-field">
+          <li class="form-field">
             <label for="email">Пошта</label>
-            <input type="email" name="email" id="email" />
-          </div>
+            <input type="email" name="email" id="email" class="form-input"/>
+            <svg class="form-icon" width="18px" height="18px">
+              <use href="./images/sprite.svg#email-icon"></use>
+            </svg>
+          </li>
 
-          <div class="form-field">
+          <li class="form-field">
             <label for="comment">Коментар</label>
             <textarea
               name="comment"
@@ -537,16 +547,24 @@
               cols="41"
               rows="7"
               placeholder="Введіть текст"
-              class="your-text"
+              class="form-textarea"
             ></textarea>
-          </div>
+          </li>
 
-          <div class="accept">
-            <input type="checkbox" name="accept" id="accept" />
-            <label for="accept">Погоджуюся з розсилкою та приймаю <a>Умови договору</a></label>
+          <li class="accept">
+            <input type="checkbox" name="accept" id="accept" class="form-checkbox"/>
+            <svg width="16" height="15" class="checkbox-icon">
+              <use href="./images/sprite.svg#uncheck-icon" class="checked">
+              </use>
+              <use href="./images/sprite.svg#check-icon" class="unchecked">
+              </use>
+            </svg>
+            <label for="accept">Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></label>
+          </li>
+</ul>
+          <div class="btn-postavsya">
+          <button type="submit" class="btn-send">Відправити</button>
           </div>
-
-          <button type="submit">Відправити</button>
         </form>
       </div>
     </div>
