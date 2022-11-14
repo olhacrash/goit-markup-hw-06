@@ -501,6 +501,17 @@
             </li>
           </ul>
         </div>
+        <div class="follow-us">
+          <strong class="follow-us-title">Підпишіться на розсилку</strong>
+          <form class="form-follow">
+            <input class="email-field" type="email" name="mail" class="mail" placeholder="E-mail">
+            <button type="submit" class="follow-btn">Підписатися
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#send-icon"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -550,18 +561,17 @@
               class="form-textarea"
             ></textarea>
           </li>
-
-          <li class="accept">
+</ul>
+          <label for="accept" class="accept">
             <input type="checkbox" name="accept" id="accept" class="form-checkbox"/>
             <svg width="16" height="15" class="checkbox-icon">
-              <use href="./images/sprite.svg#uncheck-icon" class="checked">
+              <use href="./images/sprite.svg#uncheck-icon" class="unchecked">
               </use>
-              <use href="./images/sprite.svg#check-icon" class="unchecked">
+              <use href="./images/sprite.svg#check-icon" class="checked">
               </use>
             </svg>
-            <label for="accept">Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></label>
-          </li>
-</ul>
+            Погоджуюся з розсилкою та приймаю <a href="#" class="accept-link">Умови договору</a>
+          </label>
           <div class="btn-postavsya">
           <button type="submit" class="btn-send">Відправити</button>
           </div>
