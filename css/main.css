@@ -768,6 +768,7 @@ transition: background-color 250ms var(--cubic-brizer), color 250ms var(--cubic-
 .follow-btn:focus {
     background-color: var(--button-bcg-color);
 }
+
 /* Модальне вiкно */
 
 .backdrop {
