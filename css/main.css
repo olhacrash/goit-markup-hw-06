@@ -649,7 +649,7 @@ display: flex;
 
 .join-to {
 margin-left: 70px;
-margin-right: 93px;
+    margin-right: 93px;
 }
 
 .join-to-title,
@@ -701,26 +701,26 @@ fill: #ffffff;
 /* Подпишитесь на нас */
 
 .follow-us {
-    position: relative;
+position: relative;
     width: 570px;
     height: 86px;
 }
 
 .form-follow {
-    margin-top: 20px;
+margin-top: 20px;
 }
 
 .email-field {
-    position: absolute;
+position: absolute;
 
-    width: 358px;
+width: 358px;
     height: 50px;
 
-    padding-top: 15px;
+padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
 
-    outline: none;
+outline: none;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -728,31 +728,31 @@ fill: #ffffff;
 }
 
 .email-field::placeholder {
-    font-size: 16px;
+font-size: 16px;
     line-height: 1.25;
 
-    display: flex;
+display: flex;
     align-items: center;
 
-    color: rgba(255, 255, 255, 0.6);
+color: rgba(255, 255, 255, 0.6);
 }
 
 .follow-btn {
-    position: absolute;
+position: absolute;
     right: 0;
     bottom: 0;
     border: transparent;
 
-    width: 200px;
+width: 200px;
     height: 50px;
 
-    background-color: var(--accent-text-color);
+background-color: var(--accent-text-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: var(--title-white-color);
     border-radius: 4px;
     cursor: pointer;
 
-    display: flex;
+display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -760,6 +760,13 @@ fill: #ffffff;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+transition: background-color 250ms var(--cubic-brizer), color 250ms var(--cubic-brizer),
+        box-shadow 250ms var(--cubic-brizer);
+}
+
+.follow-btn:hover,
+.follow-btn:focus {
+    background-color: var(--button-bcg-color);
 }
 /* Модальне вiкно */
 
@@ -887,7 +894,7 @@ width: 448px;
 .form-field label {
 display: inline-block;
     margin-bottom: 4px;
-        font-size: 12px;
+    font-size: 12px;
     line-height: calc(14 / 12);
     letter-spacing: 0.01em;
     color: var(--paragraph-text-color);
@@ -922,9 +929,9 @@ display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
-    
-        color: var(--paragraph-text-color);
-        line-height: 1.71;
+
+    color: var(--paragraph-text-color);
+    line-height: 1.71;
 }
 
 .accept-link {
@@ -936,9 +943,9 @@ color: var(--accent-text-color);
 /* Чекбокс */
 
 .form-checkbox {
-    appearance: none;
+appearance: none;
     position: absolute;
-white-space: nowrap;
+    white-space: nowrap;
     width: 1px;
     height: 1px;
     overflow: hidden;
@@ -950,12 +957,12 @@ white-space: nowrap;
 }
 
 .checkbox-icon {
-    margin-right: 7px;
+margin-right: 7px;
 }
 
 .checkbox-icon .unchecked {
 opacity: 1;
-transition: 250ms var(--cubic-brizer);
+    transition: 250ms var(--cubic-brizer);
 }
 
 .form-checkbox:checked+.checkbox-icon .unchecked {
@@ -964,7 +971,7 @@ transition: 250ms var(--cubic-brizer);
 
 .checkbox-icon .checked {
 opacity: 0;
-transition: 250ms var(--cubic-brizer);
+    transition: 250ms var(--cubic-brizer);
 }
 
 .form-checkbox:checked+.checkbox-icon .checked {
